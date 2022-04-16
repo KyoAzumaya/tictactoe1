@@ -1,0 +1,19 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    justify-content: center;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: aqua;
+}
+
+h3 {
+    color:aquamarine;
+}

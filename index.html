@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Title -->
+
+    <div class="container-fluid pb-5">
+      <h1 class="text-center pt-5"><u>Tic Tac Toe</u></h1>
+    </div>
+
+    <!-- Player 1 and Player 2 -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="text-center">
+            <h3 class="player1 p-5">Player 1 = X</h3>
+          </div>
+        </div>
+        <div class="col">
+            <div class="text-center">
+              <h3 class="winner p-5 alert alert-primary" role="alert" id="winner"></h3>
+            </div>
+          </div>
+        <div class="col">
+          <div class="text-center">
+            <h3 class="player2 p-5">Player 2 = O</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reset Button -->
+
+    <div class="container-fluid pb-5">
+      <div class="text-center">
+        <button class="reset-button" type="button" onClick="clearBoard()">Reset</button>
+      </div>
+    </div>
+
+    <!-- Gamex -->
+
+      <div class="board">
+        <button data-index="1" class="box" id="b1" ></button>
+        <button data-index="2" class="box" id="b2" ></button>
+        <button data-index="3" class="box" id="b3" ></button>
+        <button data-index="4" class="box" id="b4" ></button>
+        <button data-index="5" class="box" id="b5" ></button>
+        <button data-index="6" class="box" id="b6" ></button>
+        <button data-index="7" class="box" id="b7" ></button>
+        <button data-index="8" class="box" id="b8" ></button>
+        <button data-index="9" class="box" id="b9" ></button>
+      </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
